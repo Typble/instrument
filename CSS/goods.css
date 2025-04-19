@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(135deg, #0057B8 0%, #003366 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #FF6B00;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffffff;
+    color: #333333;
+    cursor: pointer;
+    background: linear-gradient(to right, #FF6B00, #FF8C00);
+}
+
+main {
+    padding: 20px;
+}
+
+.featured-products {
+    background-color: #ffffff;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+  }
+
+.product {
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: calc(30% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+    max-width: 100%;
+    height: 450px;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.product p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.price {
+    font-weight: bold;
+    color: #e53935;
+    font-size: 18px;
+}
+
+.warranty {
+    color: #388e3c;
+    font-style: italic;
+}
+
+.add-to-cart {
+    background: #ff6b00;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+#search-input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid #FF6B00;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#search-input:focus {
+    border-color: #0057B8;
+    box-shadow: 0 0 0 3px rgba(0, 87, 184, 0.2);
+}
+
+#brand-filter {
+    padding: 12px 15px;
+    border: 2px solid #FF6B00;
+    border-radius: 30px;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 12px;
+    padding-right: 35px;
+}
+
+footer {
+    background: linear-gradient(135deg, #0057B8 0%, #003366 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

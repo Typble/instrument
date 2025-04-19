@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПрофиИнструмент</title>
+    <link rel="stylesheet" href="CSS/goods.css">
+<link rel="icon" href="pictures/logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <h1>Товары</h1>
+        <nav>
+            <button onclick="location.href='mainForm.html'">Главная</button>
+            <button onclick="location.href='goods.html'">Товары</button>
+            <button onclick="location.href='zakaz.html'">Оформить заказ</button>
+        </nav>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Поиск по названию..." id="search-input">
+    </div>
+
+    <main>
+        <h2>Наши товары</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="pictures\drel.png" alt="Дрель-шуруповерт Makita DF332DWAE CXT">
+                <h3>Дрель-шуруповерт Makita DF332DWAE CXT</h3>
+                <p class="price">Цена: 18499 руб.</p>
+                <p class="warranty">Гарантия: 12 месяцев</p>
+                <button class="add-to-cart" onclick="addToCart('Дрель-шуруповерт Makita DF332DWAE CXT', 18499)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="pictures\bolgarka.png" alt="Шлифмашина угловая DeWalt DWE4257">
+                <h3>Шлифмашина угловая DeWalt DWE4257</h3>
+                <p class="price">Цена: 18990 руб.</p>
+                <p class="warranty">Гарантия: 12 месяцев</p>
+                <button class="add-to-cart" onclick="addToCart('Шлифмашина угловая DeWalt DWE4257', 18990)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="pictures\perforator.png" alt="Перфоратор SDS+ Интерскол П-26/800АВС">
+                <h3>Перфоратор SDS+ Интерскол П-26/800АВС</h3>
+                <p class="price">Цена: 10990 руб.</p>
+                <p class="warranty">Гарантия: 18 месяцев</p>
+                <button class="add-to-cart" onclick="addToCart('Перфоратор SDS+ Интерскол П-26/800АВС', 10990)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="pictures\drelBoschGSR.png" alt="Дрель Bosch GSR 120-LI">
+                <h3>Дрель Bosch GSR 120-LI</h3>
+                <p class="price">Цена: 7500 руб.</p>
+                <p class="warranty">Гарантия: 12 месяцев</p>
+                <button class="add-to-cart" onclick="addToCart('Дрель Bosch GSR 120-LI', 7500)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="pictures\pilaMakita.jpg" alt="Пила Makita HS7601J">
+                <h3>Пила Makita HS7601J</h3>
+                <p class="price">Цена: 11500 руб.</p>
+                <p class="warranty">Гарантия: 12 месяцев</p>
+                <button class="add-to-cart" onclick="addToCart('Пила Makita HS7601J', 11500)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="pictures\lobzikDewalt.png" alt="Лобзик DeWalt DCS335N">
+                <h3>Лобзик DeWalt DCS335N</h3>
+                <p class="price">Цена: 9500 руб.</p>
+                <p class="warranty">Гарантия: 6 месяцев</p>
+                <button class="add-to-cart" onclick="addToCart('Лобзик DeWalt DCS335N', 9500)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="pictures\rubanokBosch.png" alt="Рубанок Bosch GHO 26-82 D">
+                <h3>Рубанок Bosch GHO 26-82 D</h3>
+                <p class="price">Цена: 8900 руб.</p>
+                <p class="warranty">Гарантия: 12 месяцев</p>
+                <button class="add-to-cart" onclick="addToCart('Рубанок Bosch GHO 26-82 D', 8900)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="pictures\bolgarkaMakita.png" alt="Угловая шлифмашина Makita GA5030">
+                <h3>Угловая шлифмашина Makita GA5030</h3>
+                <p class="price">Цена: 5400 руб.</p>
+                <p class="warranty">Гарантия: 6 месяцев</p>
+                <button class="add-to-cart" onclick="addToCart('Угловая шлифмашина Makita GA5030', 5400)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="pictures\kompressor.png" alt="Компрессор Интерскол К150-2.0/25">
+                <h3>Компрессор Интерскол К150-2.0/25</h3>
+                <p class="price">Цена: 11500 руб.</p>
+                <p class="warranty">Гарантия: 24 месяца</p>
+                <button class="add-to-cart" onclick="addToCart('Компрессор Интерскол К150-2.0/25', 11500)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="pictures\pilesos.png" alt="Промышленный пылесос Metabo ASR 35 LTP">
+                <h3>Промышленный пылесос Metabo ASR 35 LTP</h3>
+                <p class="price">Цена: 18500 руб.</p>
+                <p class="warranty">Гарантия: 18 месяцев</p>
+                <button class="add-to-cart" onclick="addToCart('Промышленный пылесос Metabo ASR 35 LTP', 18500)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="pictures\mfi.png" alt="Многофункциональный инструмент Bosch PMF 220 AE">
+                <h3>Многофункциональный инструмент Bosch PMF 220 AE</h3>
+                <p class="price">Цена: 5500 руб.</p>
+                <p class="warranty">Гарантия: 6 месяцев</p>
+                <button class="add-to-cart" onclick="addToCart('Многофункциональный инструмент Bosch PMF 220 AE', 5500)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="pictures\uroven.png" alt="Уровень лазерный Makita SK104GDZ">
+                <h3>Уровень лазерный Makita SK104GDZ</h3>
+                <p class="price">Цена: 4300 руб.</p>
+                <p class="warranty">Гарантия: 12 месяцев</p>
+                <button class="add-to-cart" onclick="addToCart('Уровень лазерный Makita SK104GDZ', 4300)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="pictures\fonar.jpg" alt="Фонарь аккумуляторный DeWalt DCL040">
+                <h3>Фонарь аккумуляторный DeWalt DCL040</h3>
+                <p class="price">Цена: 3500 руб.</p>
+                <p class="warranty">Гарантия: 6 месяцев</p>
+                <button class="add-to-cart" onclick="addToCart('Фонарь аккумуляторный DeWalt DCL040', 3500)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="pictures\pila.png" alt="Беспроводная пила Makita BSS610Z">
+                <h3>Беспроводная пила Makita BSS610Z</h3>
+                <p class="price">Цена: 17500 руб.</p>
+                <p class="warranty">Гарантия: 12 месяцев</p>
+                <button class="add-to-cart" onclick="addToCart('Беспроводная пила Makita BSS610Z', 17500)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="pictures\shurupuvert.png" alt="Шуруповерт Bosсh GSR 12V-15">
+                <h3>Шуруповерт Bosсh GSR 12V-15</h3>
+                <p class="price">Цена: 9800 руб.</p>
+                <p class="warranty">Гарантия: 12 месяцев</p>
+                <button class="add-to-cart" onclick="addToCart('Шуруповерт Bosсh GSR 12V-15', 9800)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="pictures\disk.png" alt="Диск для резки Irwin">
+                <h3>Диск для резки Irwin</h3>
+                <p class="price">Цена: 1200 руб.</p>
+                <p class="warranty">Гарантия: 1 месяц</p>
+                <button class="add-to-cart" onclick="addToCart('Диск для резки Irwin', 1200)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="pictures\payalnik.png" alt="Сетевой паяльник 60 Вт">
+                <h3>Сетевой паяльник 60 Вт</h3>
+                <p class="price">Цена: 2500 руб.</p>
+                <p class="warranty">Гарантия: 3 месяца</p>
+                <button class="add-to-cart" onclick="addToCart('Сетевой паяльник 60 Вт', 2500)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <img src="pictures\shlif.png" alt="Электрическая шлифмашина Bort BSM-1200">
+                <h3>Электрическая шлифмашина Bort BSM-1200</h3>
+                <p class="price">Цена: 6500 руб.</p>
+                <p class="warranty">Гарантия: 6 месяцев</p>
+                <button class="add-to-cart" onclick="addToCart('Электрическая шлифмашина Bort BSM-1200', 6500)">Добавить в корзину</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h2>Контактная информация</h2>
+        <p>Телефон: +7 (950) 818-10-45</p>
+        <p>Email: contact@tools-store.ru</p>
+        <p>Адрес: г. Москва, ул. Инструментальная, д. 1</p>
+    </footer>
+
+    <script>
+         function addToCart(name, price) {
+             let cart = JSON.parse(localStorage.getItem('cart')) || [];
+             cart.push({ name, price });
+             localStorage.setItem('cart', JSON.stringify(cart));
+             alert(`${name} добавлен в корзину!`);
+         }
+
+         document.getElementById('search-input').addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    const products = document.querySelectorAll('.product');
+    products.forEach(product => {
+        const name = product.querySelector('h3').textContent.toLowerCase();
+        product.style.display = name.includes(searchTerm) ? 'block' : 'none';
+    });
+});
+     </script>
+</body>
+</html>
